@@ -1,13 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\footer",
     "\\src\\components\\header",
     "\\src\\components\\main"
   ],
-  "SelectedNode": "\\src\\components\\MiLista.js",
+  "SelectedNode": "\\src\\components\\main\\App.js",
   "PreviewInSolutionExplorer": false
 }
