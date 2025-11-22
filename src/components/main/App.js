@@ -1,9 +1,10 @@
-import './App.css';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
-import MiLista from '../MiLista';
+import IncidentList from '../IncidentList';
 import React, { useState } from "react";
 import Form from '../Form';
+import Fondo from '../../img/fondo.jpg'
+import './App.css';
 
 function App() { 
     const [incidencias, setIncidencia] = useState ([
@@ -159,22 +160,22 @@ function App() {
 
 
     return (
-    <>
-        <Header />
-        <h2>Mi aplicación</h2>
-        <div id='parrafo'>
-            <p>En está app se muestra el contenido de mi app</p>
-        </div>
-        <div class="contenedor-incidencias">
-            <main>
-                <MiLista incidencias={incidencias} />
-                <br />
-            </main>
-            <aside>
-                <Form agregarIncidencia={agregarIncidencia} />
-            </aside>
-        </div>
-        {/*<Footer />*/}
+        <>
+            <div className="card" style={{ backgroundImage: `url(${Fondo})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+                <Header />
+                <h2 className='mb-4 text-center'>Mi aplicación</h2>
+                    <div className="container-fluid mt-4 row">
+                        <main className='col-md-6'>
+                        <p>En está app se muestra el contenido de mi app</p>
+                        <IncidentList incidencias={incidencias} />
+                        <br />
+                    </main>
+                    <aside className='col-md-6'>
+                        <Form agregarIncidencia={agregarIncidencia} />
+                    </aside>
+                </div>
+                <Footer />
+            </div>
     </>
     );
 }

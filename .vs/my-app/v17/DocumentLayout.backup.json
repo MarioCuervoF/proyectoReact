@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\MiLista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\main\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Form.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\main\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\main\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\build\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:build\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\MiLista.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -51,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:babel.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -70,64 +74,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "App.js",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.js",
               "RelativeDocumentMoniker": "src\\components\\main\\App.js",
               "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.js",
               "RelativeToolTip": "src\\components\\main\\App.js",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAUwHcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAwJgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-22T09:37:33.345Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form.js",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.js",
               "RelativeDocumentMoniker": "src\\components\\Form.js",
               "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.js",
               "RelativeToolTip": "src\\components\\Form.js",
-              "ViewState": "AgIAADEAAAAAAAAAAAAUwGwAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-22T10:22:00.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MiLista.js",
-              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js",
-              "RelativeDocumentMoniker": "src\\components\\MiLista.js",
-              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js",
-              "RelativeToolTip": "src\\components\\MiLista.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-22T09:44:43.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.css",
-              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.css",
-              "RelativeDocumentMoniker": "src\\components\\main\\App.css",
-              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.css",
-              "RelativeToolTip": "src\\components\\main\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T09:37:32.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form.css",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\Form.css",
               "RelativeDocumentMoniker": "src\\components\\Form.css",
@@ -135,16 +112,60 @@
               "RelativeToolTip": "src\\components\\Form.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T11:01:47.542Z",
+              "WhenOpened": "2025-11-22T11:01:47.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-22T09:42:42.893Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.css",
+              "RelativeDocumentMoniker": "src\\components\\main\\App.css",
+              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\main\\App.css",
+              "RelativeToolTip": "src\\components\\main\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-22T09:37:32.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\build\\index.html",
+              "RelativeDocumentMoniker": "build\\index.html",
+              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\build\\index.html",
+              "RelativeToolTip": "build\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-22T13:11:09.875Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "MiLista.js",
+              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js",
+              "RelativeDocumentMoniker": "src\\components\\MiLista.js",
+              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\MiLista.js",
+              "RelativeToolTip": "src\\components\\MiLista.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-22T09:44:43.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "index.js",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\index.js",
               "RelativeDocumentMoniker": "src\\index.js",
@@ -152,12 +173,11 @@
               "RelativeToolTip": "src\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-22T09:45:17.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:45:17.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Footer.js",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\footer\\Footer.js",
               "RelativeDocumentMoniker": "src\\components\\footer\\Footer.js",
@@ -165,12 +185,11 @@
               "RelativeToolTip": "src\\components\\footer\\Footer.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-22T09:45:39.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:45:39.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\index.css",
               "RelativeDocumentMoniker": "src\\index.css",
@@ -178,12 +197,11 @@
               "RelativeToolTip": "src\\index.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T09:45:20.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:45:20.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Footer.css",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\footer\\Footer.css",
               "RelativeDocumentMoniker": "src\\components\\footer\\Footer.css",
@@ -191,12 +209,11 @@
               "RelativeToolTip": "src\\components\\footer\\Footer.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T09:45:41.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:45:41.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Header.js",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\header\\Header.js",
               "RelativeDocumentMoniker": "src\\components\\header\\Header.js",
@@ -204,12 +221,11 @@
               "RelativeToolTip": "src\\components\\header\\Header.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-22T09:45:28.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:45:28.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Header.css",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\src\\components\\header\\Header.css",
               "RelativeDocumentMoniker": "src\\components\\header\\Header.css",
@@ -217,25 +233,11 @@
               "RelativeToolTip": "src\\components\\header\\Header.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-22T09:36:58.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:36:58.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-22T09:42:42.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "babel.config.json",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\babel.config.json",
               "RelativeDocumentMoniker": "babel.config.json",
@@ -243,12 +245,11 @@
               "RelativeToolTip": "babel.config.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-22T09:42:38.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:42:38.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -256,12 +257,11 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-22T09:42:41.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:42:41.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Users\\Rojobros98\\Documents\\proyecto_React\\my-app\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
@@ -269,8 +269,7 @@
               "RelativeToolTip": "package-lock.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-22T09:42:40.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T09:42:40.055Z"
             }
           ]
         }

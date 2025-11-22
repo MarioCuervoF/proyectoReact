@@ -4,9 +4,9 @@ import './Footer.css';
 class Footer extends React.Component {
     render() {
         return (
-            <div id="footer">
+            <div className="bg-personalizado-azul text-center texto-personalizado p-3">
                 <h3>
-                    Lorem Ipsum
+                    Copyright © 2025 Mario Cuervo Ferrero
                 </h3>
             </div>
         );

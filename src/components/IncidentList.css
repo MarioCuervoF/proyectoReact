@@ -1,0 +1,12 @@
+.table-personalizada {
+    --bs-table-bg: #2C3E50;
+    --bs-table-color: #ECF0F1;
+
+    --bs-table-striped-bg: #34495E;
+    --bs-table-striped-color: #ECF0F1;
+}
+
+.table-personalizada-thead {
+    --bs-table-bg: #1A5276;
+    color: mediumvioletred;
+}
