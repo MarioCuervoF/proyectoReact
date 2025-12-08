@@ -1,14 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\build",
-    "\\public",
+    "\\db",
     "\\src",
     "\\src\\components",
     "\\src\\components\\footer",
     "\\src\\components\\header",
     "\\src\\components\\main"
   ],
-  "SelectedNode": "\\src\\components\\IncidentList.css",
+  "SelectedNode": "\\src\\components\\IncidentList.js",
   "PreviewInSolutionExplorer": false
 }

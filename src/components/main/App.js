@@ -1,13 +1,55 @@
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import IncidentList from '../IncidentList';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from '../Form';
 import Fondo from '../../img/fondo.jpg'
 import './App.css';
 
 function App() { 
-    const [incidencias, setIncidencia] = useState ([
+
+    const INCIDENCIA_API_URL = 'http://localhost:3004/incidencias';
+
+    const USUARIO_API_URL = 'http://localhost:3004/users';
+
+    const [usuarios, setUsuarios] = useState([]);
+    const [incidencias, setIncidencia] = useState([]);
+
+    useEffect(() => {
+        const obtenerIncidencias = async () => {
+            try {
+                let response = await fetch(INCIDENCIA_API_URL);
+                if (!response.ok) {
+                    throw new Error("HTTP Error");
+                }
+                const data = await response.json();
+                console.log(data);
+                setIncidencia(data);
+            } catch (e) {
+                console.error("Error al cargar las incidencias:", e);
+            }
+        }
+
+        const obtenerUsuarios = async () => {
+            try {
+                let response = await fetch(USUARIO_API_URL);
+                if (!response.ok) {
+                    throw new Error("HTTP Error");
+                }
+                const data = await response.json();
+                console.log(data);
+                setUsuarios(data);
+            } catch (e) {
+                console.error("Error al cargar los usuarios:", e);
+            }
+        }
+
+        obtenerIncidencias();
+        obtenerUsuarios();
+    }, []);
+    
+
+    /*const [incidencias, setIncidencia] = useState ([
         {
             id_incidencia: 1,
             id_usuario: "e768590345h",
@@ -117,43 +159,54 @@ function App() {
             fecha_registro: "2025-10-22",
             estado: "Abierta",
             ubicacion: "Varias aulas"
-        }]);
+        }]);*/
 
 
-
-    const agregarIncidencia = (nuevo_usuario, nuevo_titulo, nuevo_descripcion, nuevo_categoria,
-        nuevo_nivel_urgencia, nuevo_ubicacion) => {
-
+    const agregarIncidencia = async (titulo_nuevo, usuario_nuevo, descripcion_nuevo,
+        categoria_nuevo, nivelurgencia_nuevo, ubicacion_nuevo) => {
+        try {
         const fecha = new Date();
         const year = fecha.getFullYear();
-        const month = String(fecha.getMonth() + 1).padStart(2, '0'); // meses 0-11
+        const month = String(fecha.getMonth() + 1).padStart(2, '0');
         const day = String(fecha.getDate()).padStart(2, '0');
-        const fechaFormateada = `${year}-${month}-${day}`
+        const fecha_formateada = year + "-" + month + "-" + day;
 
-        const nuevo_id = incidencias.length + 1;
-        const esDuplicado = incidencias.some(incidencia =>
-            incidencia.id_incidencia === nuevo_id);
+        let usuarioEncontrado = usuarios.find((u) => u.email == usuario_nuevo);
+            if (usuarioEncontrado) {
+                const nueva_incidencia = {
+                    usuario: usuarioEncontrado,
+                    titulo: titulo_nuevo,
+                    descripcion: descripcion_nuevo,
+                    categoria: categoria_nuevo,
+                    nivel_urgencia: nivelurgencia_nuevo,
+                    fecha_registro: fecha_formateada, 
+                    ubicacion: ubicacion_nuevo,
+                    estado: "Abierta",
+                    comentarios: []
+                }
 
-        if (esDuplicado) {
-            alert('ERROR: El número de incidencia ' + nuevo_id + ' ya existe. No se guardará.');
-            return;
+                let response = await fetch(INCIDENCIA_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": 'application/json'
+                    },
+                    body: JSON.stringify(nueva_incidencia)
+                });
+
+                if (!response.ok) {
+                    throw new Error("Fallo de la petición POST. Estado HTTP: ${response.status}");
+                }
+
+                let data = await response.json();
+                console.log("nueva incidencia: ", data);
+                setIncidencia([...incidencias, data]);
+            } else {
+                alert("No se puede crear incidencia. Usuario no encontrado");
+                throw new Error("Error al crear incidencia. Usuario no encontrado");
+            }
+        } catch (e) {
+            console.error("Falló la petición POST de la incidencia", e.message);
         }
-
-        const nueva_incidencia = {
-            id_incidencia: incidencias.length + 1,
-            id_usuario: nuevo_usuario,
-            titulo: nuevo_titulo,
-            descripcion: nuevo_descripcion,
-            categoria: nuevo_categoria,
-            nivel_urgencia: nuevo_nivel_urgencia,
-            ubicacion: nuevo_ubicacion,
-            fecha_registro: fechaFormateada,
-            estado: "Abierta",
-        }
-
-        setIncidencia([...incidencias, nueva_incidencia]);
-
-        console.log("Datos recibidos: ", nueva_incidencia);
     }
 
 

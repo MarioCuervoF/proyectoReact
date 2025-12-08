@@ -22,10 +22,10 @@ function IncidentList(props) {
             <tbody className="table-personalizada">
                 {props.incidencias.map((i) => (
                     <tr key={i.id_incidencia}>
-                        <td><strong>Id_incidencia: </strong>{i.id_incidencia}</td>
+                        <td><strong>Id_incidencia: </strong>{i.id}</td>
                         <td><strong>Titulo: </strong>{i.titulo} </td>
                         <td><strong>Descripcion: </strong>{i.descripcion}</td>
-                        <td><strong>Usuario: </strong>{i.id_usuario}</td>
+                        <td><strong>Usuario: </strong>{i.usuario ? i.usuario.email : 'N/A'}</td>
                         <td><strong>Urgencia: </strong>{i.nivel_urgencia}</td>
                         <td><strong>Ubicacion: </strong>{i.ubicacion}</td>
                         <td><strong>Categoria: </strong>{i.categoria}</td>
