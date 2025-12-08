@@ -10,7 +10,7 @@ function Form(props) {
         props.agregarIncidencia(
             /*form.id_incidencia,*/
             form.titulo.value,
-            form.usuario.value,
+            form.email.value,
             form.descripcion.value,
             form.categoria.value,
             form.nivel.value,
@@ -40,8 +40,8 @@ function Form(props) {
 
             {/*usuario*/}
             <div className="elemento-form">
-                <label className="mb-3 form-label">Usuario</label>
-                <input className="mb-3 form-control" type="text" name="usuario" required></input>
+                <label className="mb-3 form-label">Email</label>
+                <input className="mb-3 form-control" type="email" name="email" required></input>
             </div>
 
             {/*descripción incidencia*/}
