@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import Form from '../Form';
 import Fondo from '../../img/fondo.jpg'
 import './App.css';
-
+import { jwtDecode } from "jwt-decode";
 
 const LOGIN_API_URL = 'http://localhost:3004/login';
 
@@ -65,6 +65,7 @@ function App() {
 
             if (response.ok) {
                 let data = await response.json();
+                localStorage.setItem("authToken", data["accessToken"])
                 setUsuarioLogin(data["user"]);
                 console.log("Login exitoso. Usuario: ", data["user"]);
                 return true;
@@ -80,6 +81,29 @@ function App() {
         }
     }
 
+    useEffect(() => {
+        const obtenerUsuarioLogueado = () => {
+            const savedUser = localStorage.getItem('authToken');
+            if (savedUser) {
+                const decodedUser = jwtDecode(localStorage.getItem('authToken'));
+                console.log(decodedUser);
+                if (decodedUser) {
+                    const user = usuarios.find((u) => u.email === decodedUser.email);
+                    // Si existe el usuario en texto, lo convertimos a objeto JSON
+                    user ? setUsuarioLogin(user) : setUsuarioLogin(null);
+                }
+            }
+        }
+        obtenerUsuarioLogueado();
+    }, [usuarios]);
+
+    const cerrarSesion = () => {
+        localStorage.removeItem('authToken');
+
+        setUsuarioLogin(null);
+
+        console.log("Sesión cerrada y token eliminado.");
+    };
 
     const agregarIncidencia = async (titulo_nuevo, usuario_nuevo, descripcion_nuevo,
         categoria_nuevo, nivelurgencia_nuevo, ubicacion_nuevo) => {
@@ -137,9 +161,12 @@ function App() {
                 <Header />
                 <h2 className='mb-4 text-center'>Mi aplicación</h2>
                 {usuarioLogin ? (
-
                     <div className="container-fluid mt-4 row">
                         <main className='col-md-6'>
+                        <p>Bienvenido, <strong>{usuarioLogin.email}</strong></p>
+                        <button className="btn btn-outline-danger btn-sm" onClick={cerrarSesion}>
+                            Cerrar Sesión
+                        </button>
                         <p>En está app se muestra el contenido de mi app</p>
                         <IncidentList incidencias={incidencias} />
                         <br />
