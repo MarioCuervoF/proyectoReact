@@ -21,7 +21,7 @@ function IncidentList(props) {
 
             <tbody className="table-personalizada">
                 {props.incidencias.map((i) => (
-                    <tr key={i.id_incidencia}>
+                    <tr key={i.id}>
                         <td><strong>Id_incidencia: </strong>{i.id}</td>
                         <td><strong>Titulo: </strong>{i.titulo} </td>
                         <td><strong>Descripcion: </strong>{i.descripcion}</td>
