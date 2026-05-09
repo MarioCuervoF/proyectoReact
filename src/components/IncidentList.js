@@ -16,6 +16,7 @@ function IncidentList(props) {
                     <th>Categoria</th>
                     <th>Fecha</th>
                     <th>Estado</th>
+                    {props.usuarioLogin?.rol?.nombre_rol === 'admin' && <th>Acciones</th>}
                 </tr>
             </thead>
 
@@ -31,6 +32,18 @@ function IncidentList(props) {
                         <td><strong>Categoria: </strong>{i.categoria}</td>
                         <td><strong>Fecha: </strong>{i.fecha_registro}</td>
                         <td><strong>Estado: </strong>{i.estado}</td>
+                        {props.usuarioLogin?.rol?.nombre_rol === 'admin' && (
+                            <td>
+                                {i.estado !== "Cerrada" ? (
+                                    <button
+                                        className="btn btn-danger btn-sm"
+                                        onClick={() => props.cerrarIncidencia(i.id)}
+                                    >
+                                        Cerrar
+                                    </button>
+                                ) : null}
+                            </td>
+                        )}
                     </tr>
                 ))}
             </tbody>

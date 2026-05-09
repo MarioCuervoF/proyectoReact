@@ -7,6 +7,11 @@ import Form from '../Form';
 import Fondo from '../../img/fondo.jpg'
 import './App.css';
 import { jwtDecode } from "jwt-decode";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Inicio from '../Inicio';
+import UserRoleManagment from '../UserRoleManagment';
+import UsersForm from '../UsersForm';
+
 
 const LOGIN_API_URL = 'http://localhost:3004/login';
 
@@ -152,10 +157,93 @@ function App() {
         }
     }
 
+    const cerrarIncidencia = async (id) => {
+        try {
+            const response = await fetch(`${INCIDENCIA_API_URL}/${id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ estado: "Cerrada" }),
+            });
+
+            if (response.ok) {
+                const incidenciasActualizadas = incidencias.map(inc =>
+                    inc.id === id ? { ...inc, estado: "Cerrada" } : inc
+                );
+                setIncidencia(incidenciasActualizadas);
+            }
+        } catch (e) {
+            console.error("Error al cerrar la incidencia:", e);
+        }
+    };
+
+    const onCambiarRol = async (emailUsuario) => {
+        try {
+            const usuarioActual = usuarios.find(u => u.email === emailUsuario);
+            if (!usuarioActual) return;
+
+            const esAdmin = usuarioActual.rol.nombre_rol === 'admin';
+            const nuevoRol = {
+                id: esAdmin ? 1 : 2,
+                nombre_rol: esAdmin ? 'comun' : 'admin',
+                descripcion: esAdmin ? "Usuario regular del sistema" : "Administrador"
+            };
+
+            const response = await fetch(`${USUARIO_API_URL}/${usuarioActual.id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ rol: nuevoRol }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                setUsuarios(usuarios.map(u => u.email === emailUsuario ? { ...u, rol: nuevoRol } : u));
+                alert(`Rol de ${emailUsuario} actualizado a ${nuevoRol.nombre_rol}`);
+            }
+        } catch (e) {
+            console.error("Error al cambiar el rol:", e);
+        }
+    };
+
+    const agregarUsuario = async (nombre_nuevo, email_nuevo, password_nuevo,
+        rol_nuevo) => {
+        try {
+            const fecha = new Date();
+            const year = fecha.getFullYear();
+            const month = String(fecha.getMonth() + 1).padStart(2, '0');
+            const day = String(fecha.getDate()).padStart(2, '0');
+            const fecha_formateada = year + "-" + month + "-" + day;
+
+            const nuevoUsuario = {
+                nombre: nombre_nuevo,
+                email: email_nuevo,
+                password: password_nuevo,
+                rol: {
+                    id: rol_nuevo === 'admin' ? 2 : 1,
+                    nombre_rol: rol_nuevo,
+                    descripcion: rol_nuevo === 'admin' ? "Administrador" : "Usuario regular"
+                },
+                fecha_registro: fecha_formateada
+            };
 
 
+            let response = await fetch(USUARIO_API_URL, {
+                method: 'POST',
+                headers: { "Content-Type": 'application/json' },
+                body: JSON.stringify(nuevoUsuario)
+            });
 
-    return (
+            if (response.ok) {
+                let data = await response.json();
+                setUsuarios([...usuarios, data]);
+                alert("Usuario creado correctamente");
+            }
+        } catch (e) {
+            console.error("Error al crear usuario:", e);
+        }
+    }
+
+
+    /*return (
         <>
             <div className="card" style={{ backgroundImage: `url(${Fondo})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
                 <Header />
@@ -181,7 +269,71 @@ function App() {
                 <Footer />
             </div>
     </>
+    );*/
+
+    return (
+        <>
+            <div className="card" style={{ backgroundImage: `url(${Fondo})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+                <Header />
+                <h2 className='mb-4 text-center'>Mi aplicación</h2>
+                {usuarioLogin ? (
+                    <div className="container-fluid mt-4 row">
+                        <main className='col-md-6'>
+                            <p>Bienvenido, <strong>{usuarioLogin.email}</strong></p>
+
+                            <button className="btn btn-outline-danger btn-sm" onClick={cerrarSesion}>
+                                Cerrar Sesión
+                            </button>
+
+                            <p>En está app se muestra el contenido de mi app</p>
+
+                            <nav className="navbar navbar-expand bg-body-tertiary rounded mb-4">
+                                <div className="container-fluid">
+                                    <div className="navbar-nav w-100 justify-content-around">
+                                        <Link className="nav-link px-3" to="/">Inicio</Link>
+                                        <Link className="nav-link px-3" to="/verinicidencias">Ver Incidencias</Link>
+                                        <Link className="nav-link px-3" to="/regincidencias">Registrar Inicidencia</Link>
+                                        <Link className="nav-link px-3" to="/verusuarios">Ver Usuarios</Link>
+                                        <Link className="nav-link px-3" to="/regusuarios">Registrar Usuarios</Link>
+                                    </div>
+                                </div>
+                            </nav>
+                            
+                            <Routes>
+                                <Route path="/" element={<Inicio />} />
+                                <Route
+                                    path="verinicidencias"
+                                    element={
+                                        <IncidentList
+                                            incidencias={incidencias}
+                                            usuarioLogin={usuarioLogin}
+                                            cerrarIncidencia={cerrarIncidencia}
+                                        />
+                                    }
+                                />
+                                <Route path="regincidencias" element={<Form agregarIncidencia={agregarIncidencia} />} />
+                                <Route
+                                    path="verusuarios"
+                                    element={
+                                        <UserRoleManagment
+                                            usuarios={usuarios}
+                                            onCambiarRol={onCambiarRol}
+                                        />
+                                    }
+                                />
+                                <Route path="regusuarios" element={<UsersForm agregarUsuario={agregarUsuario} />} />
+                            </Routes>
+                            <br />
+                        </main>
+                    </div>
+                ) :
+                    <Login inicioSesion={inicioSesion}></Login>
+                }
+                <Footer />
+            </div>
+        </>
     );
+
 }
 
 
